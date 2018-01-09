@@ -21,7 +21,9 @@ import java.util.List;
 import butterknife.BindView;
 
 /**
+ * AIDL测试界面
  *
+ * @author xiaobinghe
  */
 public class AIDLTestActivity extends BaseActivity implements View.OnClickListener {
 
