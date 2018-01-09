@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_sp_sava_test"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.locensate.firstlinecode.view.CustomTitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/et_sp_key"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@color/bg"
+                    android:gravity="top"
+                    android:hint="Key of saving"
+                    android:lineSpacingExtra="3dp"
+                    android:padding="5dp" />
+
+                <EditText
+                    android:id="@+id/et_sp_content"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@color/bg"
+                    android:gravity="top"
+                    android:hint="Value of saving"
+                    android:lineSpacingExtra="3dp"
+                    android:padding="5dp" />
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/btn_sp_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@color/colorPrimaryDark"
+                android:text="存入数据"
+                android:textColor="@android:color/white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <EditText
+                    android:id="@+id/et_sp_output"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:hint="Key of reading"
+                    android:background="@color/bg"
+                    android:padding="5dp" />
+
+                <TextView
+                    android:id="@+id/tv_sp_output"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@color/bg"
+                    android:padding="5dp" />
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/btn_sp_output"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@color/colorPrimaryDark"
+                android:text="读取数据"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/tv_sp_des"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@color/bg"
+                android:padding="5dp" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_sqlite_save"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.locensate.firstlinecode.SQLiteSaveActivity">
+
+    <com.locensate.firstlinecode.view.CustomTitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_create_sql"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@color/colorPrimaryDark"
+                android:text="创建数据库"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/btn_sql_add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@color/colorPrimaryDark"
+                android:text="添加数据"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/btn_sql_delete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@color/colorPrimaryDark"
+                android:text="删除数据"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/btn_sql_update"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@color/colorPrimaryDark"
+                android:text="修改数据"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/btn_sql_query"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@color/colorPrimaryDark"
+                android:text="查询数据"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/tv_sql_des"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@color/bg"
+                android:textColor="@android:color/black" />
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

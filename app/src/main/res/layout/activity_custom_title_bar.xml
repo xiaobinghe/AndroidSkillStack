@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_custom_title_bar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.locensate.firstlinecode.CustomTitleBarActivity">
+
+    <com.locensate.firstlinecode.view.CustomTitleBar
+        android:id="@+id/ctb_test_activity"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize" />
+
+    <EditText
+        android:layout_margin="5dp"
+        android:id="@+id/et_reset_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入要重置的标题"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btt_set_title"
+            style="?android:buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@android:color/holo_red_dark"
+            android:textColor="@android:color/white" />
+
+        <Button
+            style="?android:buttonBarButtonStyle"
+            android:id="@+id/btt_switch_title_bar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@android:color/holo_red_dark"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_custom_des"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp" />
+</LinearLayout>

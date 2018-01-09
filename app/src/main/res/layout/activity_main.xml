@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.locensate.firstlinecode.view.CustomTitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@mipmap/ic_launcher" />
+
+    <Button
+        android:id="@+id/buttonTakeBigPicture"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:background="@color/colorPrimary"
+        android:onClick="onClick"
+        android:text="Take_Big_Picture" />
+
+    <Button
+        android:id="@+id/buttonTakeSmallPicture"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+
+        android:background="@color/colorPrimary"
+        android:onClick="onClick"
+        android:text="Take_Small_Picture" />
+
+    <Button
+        android:id="@+id/buttonChooseBigPicture"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:background="@color/colorPrimary"
+
+        android:onClick="onClick"
+        android:text="Choose_Big_Picture" />
+
+    <Button
+        android:id="@+id/buttonChooseSmallPicture"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:background="@color/colorPrimary"
+
+        android:onClick="onClick"
+        android:text="Choose_Small_Picture" />
+</LinearLayout>
