@@ -13,6 +13,8 @@ import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.locensate.aidl.Book;
+import com.locensate.aidl.IBookManager;
 import com.locensate.firstlinecode.service.AIDLTestService;
 import com.locensate.firstlinecode.utils.ToastUtil;
 

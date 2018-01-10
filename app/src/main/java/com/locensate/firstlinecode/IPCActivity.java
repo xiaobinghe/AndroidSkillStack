@@ -63,6 +63,7 @@ public class IPCActivity extends BaseActivity {
                         case 0:
                             break;
                         case 1:
+                            startActivity(new Intent(context,MessengerTestActivity.class));
                             break;
                         case 2:
                             startActivity(new Intent(context,AIDLTestActivity.class));

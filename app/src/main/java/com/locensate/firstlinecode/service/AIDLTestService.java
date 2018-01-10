@@ -6,11 +6,18 @@ import android.os.Binder;
 import android.os.IBinder;
 import android.os.RemoteException;
 
-import com.locensate.firstlinecode.*;
-import com.locensate.firstlinecode.Book;
+import com.locensate.aidl.Book;
+import com.locensate.aidl.IBookManager;
 
 import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
+
+
+/**
+ * AIDL服务
+ *
+ * @author xiaobinghe
+ */
 
 public class AIDLTestService extends Service {
 
