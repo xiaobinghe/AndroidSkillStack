@@ -29,7 +29,7 @@ public class HomeActivity extends AppCompatActivity {
      *
      */
     public static String[] items = {"Intent的高级用法", "体验Activity的生命周期", "自定义标题栏", "RecyclerView实现对话功能", "初识Fragment"
-            , "大喇叭BroadCast", "数据持久化", "手机多媒体", "百度地图", "多媒体++", "RxJava + Retrofit", "Custom View Test","IPC进程间通信"};
+            , "大喇叭BroadCast", "数据持久化", "手机多媒体", "百度地图", "多媒体++", "RxJava + Retrofit", "Custom View Test", "IPC进程间通信"};
 
     @BindView(R.id.srl_home)
     SwipeRefreshLayout srlHome;
@@ -41,6 +41,7 @@ public class HomeActivity extends AppCompatActivity {
         ButterKnife.bind(this);
         initData();
     }
+
 
     private void initData() {
         Log.e(TAG, "initData: +++++++++++++=========" + recyclerViewHone.getId(), null);

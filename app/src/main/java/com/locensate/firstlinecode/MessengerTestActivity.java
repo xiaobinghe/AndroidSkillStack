@@ -32,9 +32,8 @@ public class MessengerTestActivity extends BaseActivity {
                 bundle.putString("message", "send msg from client");
                 mObtain.setData(bundle);
                 ToastUtil.showToast("please input message");
-                mMessenger.send(mObtain);
-
                 mObtain.replyTo = getMessenger;
+                mMessenger.send(mObtain);
 
             } catch (RemoteException e) {
                 e.printStackTrace();
@@ -54,13 +53,12 @@ public class MessengerTestActivity extends BaseActivity {
     }
 
 
-    private class MyHandler extends Handler {
+    private static class MyHandler extends Handler {
         @Override
         public void handleMessage(Message msg) {
             switch (msg.what) {
                 case Config.SERVER_MSG:
-                   ToastUtil.showToast("receive msg successful");
-                    unbindService(mConnection);
+                    ToastUtil.showToast("receive msg successful");
                     break;
                 default:
                     super.handleMessage(msg);
@@ -68,7 +66,6 @@ public class MessengerTestActivity extends BaseActivity {
 
         }
     }
-
 
     private Messenger getMessenger = new Messenger(new MyHandler());
 
@@ -80,5 +77,12 @@ public class MessengerTestActivity extends BaseActivity {
     @Override
     public int getLayout() {
         return R.layout.activity_messenger_test_acitivity;
+    }
+
+    @Override
+    protected void onDestroy() {
+        unbindService(mConnection);
+        super.onDestroy();
+
     }
 }

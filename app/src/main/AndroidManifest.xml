@@ -108,6 +108,12 @@
 
         <activity android:name=".MessengerTestActivity">
         </activity>
+
+        <service
+            android:name=".service.SocketService"
+            android:enabled="true"
+            android:exported="true">
+        </service>
     </application>
 
 </manifest>

@@ -5,14 +5,15 @@ import android.os.Parcelable;
 
 
 /**
+ * Book
  *
  * @author xiaobinghe
  */
 
-public class Book implements Parcelable{
+public class Book implements Parcelable {
 
-    public int id;
-    public String bookName;
+    private int id;
+    private String bookName;
 
     public Book(int id, String bookName) {
         this.id = id;
@@ -34,6 +35,8 @@ public class Book implements Parcelable{
         public Book[] newArray(int size) {
             return new Book[size];
         }
+
+
     };
 
     public int getId() {
