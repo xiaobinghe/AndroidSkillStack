@@ -4,7 +4,7 @@
     android:id="@+id/activity_life_cycler"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.locensate.firstlinecode.LifeCyclerActivity">
+    tools:context="com.locensate.androidskillstack.LifeCyclerActivity">
 
     <ScrollView
         android:layout_width="match_parent"

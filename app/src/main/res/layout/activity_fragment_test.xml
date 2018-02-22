@@ -5,9 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.locensate.firstlinecode.FragmentTestActivity">
+    tools:context="com.locensate.androidskillstack.FragmentTestActivity">
 
-    <com.locensate.firstlinecode.view.CustomTitleBar
+    <com.locensate.androidskillstack.view.CustomTitleBar
         android:id="@+id/title_bar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize" />

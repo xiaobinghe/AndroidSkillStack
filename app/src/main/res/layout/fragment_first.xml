@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/holo_red_light"
-    tools:context="com.locensate.firstlinecode.fragment.FirstFragment">
+    tools:context="com.locensate.androidskillstack.fragment.FirstFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
